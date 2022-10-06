@@ -1,0 +1,137 @@
+#alert {
+    text-align: center !important;
+    display: flex !important;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    width: 100% !important;
+    z-index: 100 !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.closealert {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #6f231c!important;
+    font-weight: 900 !important;
+    font-size: 20px !important;
+    cursor: pointer!important;
+
+}
+
+body a {
+    text-decoration: unset !important;
+    color: unset !important;
+}
+
+#loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.42);
+    z-index: 1000000;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#loader img {
+    max-width: 100%;
+}
+
+/* payment */
+.backtocart {
+    font-size: 12px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #505055 !important;
+}
+
+.backtocart:hover {
+    color: #001e44 !important;
+}
+
+#paymentpart span {
+    direction: rtl !important;
+
+}
+
+/* profile */
+.cancelchange {
+    display: none;
+    background: #8b2c23 !important;
+    border: none !important;
+    box-shadow: none;
+}
+
+.change {
+    display: none;
+}
+
+/* hader */
+
+#loginpart .dropdown-menu{
+    max-width: 150px;
+    text-align: right;
+    left: 10%;
+    direction: rtl;
+}
+
+.serching_keyword_item a:hover{
+    color: #0fabc6!important;
+}
+
+/* filter */
+
+section.range-slider {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+
+section.range-slider input {
+    pointer-events: none;
+    position: absolute;
+    /*overflow: hidden;*/
+    left: 0;
+    top: 15px;
+    width: 100%;
+    outline: none;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+section.range-slider input::-webkit-slider-thumb {
+    pointer-events: all;
+    position: relative;
+    z-index: 1;
+    outline: 0;
+}
+
+
+
+/* product */
+.miniImagefocus{
+     border-color: red!important;
+     opacity: 1!important;
+     transform: scale(1.02)!important;
+ }
+
