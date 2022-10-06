@@ -1,0 +1,180 @@
+.navbar-inverse {
+    background-color:rgb(79, 79, 79);    
+}
+.navbar{
+    font-size:16px;
+    padding:6px;
+    font-family: Verdana;
+}
+.navbar-inverse .navbar-brand{
+    color:rgb(200,200,200);
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+    color: white;
+}
+
+@media(min-width:320px){
+	#myImage{
+		height:320px;
+		width:320px;
+	}
+	#myPie{
+		height:148px;
+		width:200px;
+	}
+}
+@media(min-width:481px){
+	#myImage{
+		height:266px;
+		width:360px;
+	}
+	#myPie{
+		height:266px;
+		width:360px;
+	}
+}
+@media(min-width:641px){
+	#myImage{
+		height:600px;
+		width:650px;
+	}
+	#myPie{
+		height:389px;
+		width:525px;
+	}
+}
+@media(min-width:961px){
+	#myImage{
+		height:600px;
+		width:650px;
+	}
+	#myPie{
+		height:389px;
+		width:525px;
+	}
+}
+@media(min-width:1000px){
+	#myImage{
+		height:600px;
+		width:650px;
+	}
+	#myPie{
+		height:389px;
+		width:525px;
+	}
+	.capt{
+		font-size:20px;
+	}
+}
+#academics{
+	max-width:1000px;
+}
+body{
+     max-width: 650px; 
+	 margin: 0 auto; 	
+	 padding-left:10px;
+	 padding-right:10px;
+	 
+	#margin-left:51%;
+	#margin-right:49%;
+}
+
+.btn:link{
+    padding:5px;
+    color:grey;
+    border:1px solid grey;
+}
+.btn:visited{
+    padding:5px;
+    color:grey;
+    border:1px solid grey;
+}
+.btn:hover{
+    padding:5px;
+    color:grey;
+    border:1px solid black;
+}
+.btn:active{
+    padding:5px;
+    color:grey;
+    border:1px solid grey;
+}
+
+.btn-default:link{
+    background-color:rgb(255,255,255)
+}
+.btn-default:visited{
+    background-color:rgb(255,255,255)
+}
+.btn-default:hover{
+    background-color:rgb(255,255,255)
+}
+.btn-default:active{
+    background-color:rgb(255,255,255)
+}
+.btn-default:focus{
+    background-color:rgb(255,255,255)   
+}
+
+hr {
+    height: 1px;
+    border-top: 3px solid #ccc;
+    margin: 1em 0;
+    
+}
+
+html { 
+    min-height:100%;
+    position:relative;    
+} 
+
+.footer { 
+    position: absolute; 
+    bottom:0; 
+    right:0;
+    left:0;
+}
+
+a{
+    color:grey;
+}
+a:hover{
+    color:black;
+}
+
+#contactMe{
+	margin-bottom:50px;
+}
+
+.circleImage{
+	border:2px solid black;
+	border-radius:100%;
+}
+#squares div {
+    /* these styles will let the divs line up next to each other
+       while accepting dimensions */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: black;
+    /* a small margin to separate the blocks */
+    margin-right: 5px;
+	border-radius:5px;
+}
+
+.greyImage{
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	padding-right:10px;
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.colorOnHover{
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+	padding-right:10px;
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
