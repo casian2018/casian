@@ -1,2 +1,0 @@
-# EveryRunning
-Website shoes
