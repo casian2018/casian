@@ -14,6 +14,10 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 <body>
     
@@ -22,15 +26,6 @@
 <header class="header">
 
     <a href="#" class="logo"> <i class=""></i> shoe Kingz </a>
-
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#features">features</a>
-        <a href="#products">products</a>
-        <a href="#categories">categories</a>
-        <a href="#review">review</a>
-        <a href="#blogs">blogs</a>
-    </nav>
 
     <div class="icons">
         <div class="fas fa-bars" id="menu-btn"></div>
@@ -67,7 +62,7 @@
     <div class="content">
         <h3>fresh and <span>new</span> products for your</h3>
         <p>We have the latest sneakers and the cheapest on the market.</p>
-        <a href="#" class="btn">shop now</a>
+        <a onclick="myFunction()" class="btn">shop now</a>
     </div>
 
 </section>
@@ -86,40 +81,76 @@
             <img src="image/1.png" alt="">
             <h3>fresh and new</h3>
             <p>We have the latest sneakers and the cheapest on the market.</p>
-            <a href="#" class="btn">read more</a>
         </div>
+     
 
         <div class="box">
             <img src="image/R.png" alt="">
             <h3>free delivery</h3>
             <p>The delivery is supported by us, Shoe Kings to bring you a better price.</p>
-            <a href="#" class="btn">read more</a>
         </div>
 
         <div class="box">
             <img src="image/feature-img-3.png" alt="">
             <h3>easy payments</h3>
             <p>The payment is supported both with the paypal, the card and the delivery of the products.</p>
-            <a href="#" class="btn">read more</a>
+
         </div>
 
     </div>
 
 </section>
 
-<!-- features section ends -->
-
-<!-- products section starts  -->
-
 <section class="products" id="products">
 
     <h1 class="heading"> our <span>products</span> </h1>
 
-    <div class="swiper product-slider">
+    <div class="swiper product-slider swiper-initialized swiper-horizontal swiper-pointer-events">
 
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" id="swiper-wrapper-d5c3e65452b1b5ad" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-1480px, 0px, 0px);"><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="8 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="7">
+                <img src="image/femei/p8/ecco-retro-sneaker-w-sneaker_21170360371_multicolor-white-peach-nectar-beyaz_1_buyuk.jpg" alt="">
+                <h3>
+                    ECCO RETRO SNEAKER W SNEAKER
+                </h3>
+                <div class="price"> $35.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="9 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="8">
+                <img src="image/femei/p9/4434b10d30ee4de4b37f44cd74a121ee.webp" alt="">
+                <h3>AIR JORDAN 1 MID
+                </h3>
+                <div class="price"> $129.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="10 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="9">
+                <img src="image/femei/p10/sneaker-bots-1634249880625-videoSixteenByNineJumbo1600-v3.jpg" alt="">
+                <h3>
+                    Sneaker Bots Made Shoe Sales
+                </h3>
+                <div class="price"> $65.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="1 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="0">
                 <img src="image/femei/p1/346792431_max.jpg" alt="">
                 <h3>Sneakers Breathable Woman</h3>
                 <div class="price"> $49.99</div>
@@ -133,7 +164,7 @@
                 <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="2 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="1">
                 <img src="image/femei/p2/355549647_max.jpg" alt="">
                 <h3>Anime Roronoa Zoro Sneakers</h3>
                 <div class="price"> $39.99 </div>
@@ -146,7 +177,7 @@
                 <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box swiper-slide-prev" role="group" aria-label="3 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="2">
                 <img src="image/femei/p3/shopping.png" alt="">
                 <h3>	
                     Nike Legend Essential 2 Women's</h3>
@@ -160,7 +191,7 @@
                 <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box swiper-slide-active" role="group" aria-label="4 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="3">
                 <img src="image/femei/p4/1_5122_ZM_THERO.png" alt="">
                 <h3>Converse Chuck Taylor All Star Hi
                 </h3>
@@ -174,7 +205,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box swiper-slide-next" role="group" aria-label="5 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="4">
                 <img src="image/femei/p5/01_8801110206_SI_00.webp" alt="">
                 <h3>
                     Ladies Slip On Shoes
@@ -188,7 +219,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="6 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="5">
                 <img src="image/femei/p6/shopping.webp" alt="">
                 <h3>Adidas Neon Black Sneaker 
                 </h3>
@@ -202,7 +233,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="7 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="6">
                 <img src="image/femei/p7/893825847.adidas-sneaker-low-multix-negru-marimea-11-5.jpg" alt="">
                 <h3>Sneaker 'MULTIX'
                 </h3>
@@ -216,7 +247,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="8 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="7">
                 <img src="image/femei/p8/ecco-retro-sneaker-w-sneaker_21170360371_multicolor-white-peach-nectar-beyaz_1_buyuk.jpg" alt="">
                 <h3>
                     ECCO RETRO SNEAKER W SNEAKER
@@ -231,7 +262,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="9 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="8">
                 <img src="image/femei/p9/4434b10d30ee4de4b37f44cd74a121ee.webp" alt="">
                 <h3>AIR JORDAN 1 MID
                 </h3>
@@ -245,7 +276,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="10 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="9">
                 <img src="image/femei/p10/sneaker-bots-1634249880625-videoSixteenByNineJumbo1600-v3.jpg" alt="">
                 <h3>
                     Sneaker Bots Made Shoe Sales
@@ -262,13 +293,84 @@
             </div>
             
 
-    </div>
+    <div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="1 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="0">
+                <img src="image/femei/p1/346792431_max.jpg" alt="">
+                <h3>Sneakers Breathable Woman</h3>
+                <div class="price"> $49.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="2 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="1">
+                <img src="image/femei/p2/355549647_max.jpg" alt="">
+                <h3>Anime Roronoa Zoro Sneakers</h3>
+                <div class="price"> $39.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate swiper-slide-duplicate-prev" role="group" aria-label="3 / 10" style="width: 276px; margin-right: 20px;" data-swiper-slide-index="2">
+                <img src="image/femei/p3/shopping.png" alt="">
+                <h3>	
+                    Nike Legend Essential 2 Women's</h3>
+                <div class="price">$45.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div></div>
 
-    <div class="swiper product-slider">
+    <div class="swiper product-slider swiper-initialized swiper-horizontal swiper-pointer-events">
 
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper" id="swiper-wrapper-bbb143dc5746b8aa" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-1446.67px, 0px, 0px);"><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="6 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="5">
+                <img src="image/man/p16/71ex+bOm2qL._AC_UY695_.jpg" alt="">
+                <h3>Shoes Trail Running Fitness Shoes</h3>
+                <div class="price"> $19.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="7 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="6">
+                <img src="image/man/p17/71RO+IlM3hL._AC_UX695_.jpg" alt="">
+                <h3>WHITIN Running Shoes Men</h3>
+                <div class="price"> $49.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="8 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="7">
+                <img src="image/man/p18/71TsIdepdSL._AC_UX695_.jpg" alt="">
+                <h3>KangaROOS Unisex K5-Comb Ev</h3>
+                <div class="price"> $27.99 </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="1 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="0">
                 <img src="image/man/p11/71ClZGRr2cL._AC_UY695_.jpg" alt="">
                 <h3>Running Shoes Trainers Lightweight</h3>
                 <div class="price"> $39.99</div>
@@ -282,7 +384,7 @@
                 <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="2 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="1">
                 <img src="image/man/p12/71Gmfwrnv5L._AC_UY695_.jpg" alt="">
                 <h3>Shoes Men's Running Shoes</h3>
                 <div class="price"> $25.99</div>
@@ -296,7 +398,7 @@
                 <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box swiper-slide-prev" role="group" aria-label="3 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="2">
                 <img src="image/man/p13/71oOLhrozhS._AC_UY695_.jpg" alt="">
                 <h3>Trainers Men's Shoes</h3>
                 <div class="price"> $52.99</div>
@@ -310,7 +412,7 @@
                 <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box swiper-slide-active" role="group" aria-label="4 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="3">
                 <img src="image/man/p14/71tx2O7RuML._AC_UY695_.jpg" alt="">
                 <h3>New Balance Damen 574 Sneaker</h3>
                 <div class="price"> $44.99 </div>
@@ -324,7 +426,7 @@
                 <a href="#" class="btn">add to cart</a>
             </div>
 
-            <div class="swiper-slide box">
+            <div class="swiper-slide box swiper-slide-next" role="group" aria-label="5 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="4">
                 <img src="image/man/p15/71BUykUzJQL._AC_UX695_.jpg" alt="">
                 <h3>PUMA Men's Tazon 6 Fm Running</h3>
                 <div class="price"> $59.99 </div>
@@ -337,7 +439,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="6 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="5">
                 <img src="image/man/p16/71ex+bOm2qL._AC_UY695_.jpg" alt="">
                 <h3>Shoes Trail Running Fitness Shoes</h3>
                 <div class="price"> $19.99 </div>
@@ -350,7 +452,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="7 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="6">
                 <img src="image/man/p17/71RO+IlM3hL._AC_UX695_.jpg" alt="">
                 <h3>WHITIN Running Shoes Men</h3>
                 <div class="price"> $49.99 </div>
@@ -363,7 +465,7 @@
                 </div>
                 <a href="#" class="btn">add to cart</a>
             </div>
-            <div class="swiper-slide box">
+            <div class="swiper-slide box" role="group" aria-label="8 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="7">
                 <img src="image/man/p18/71TsIdepdSL._AC_UX695_.jpg" alt="">
                 <h3>KangaROOS Unisex K5-Comb Ev</h3>
                 <div class="price"> $27.99 </div>
@@ -383,12 +485,46 @@
 
         </div>
 
-    </div>
+    <div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="1 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="0">
+                <img src="image/man/p11/71ClZGRr2cL._AC_UY695_.jpg" alt="">
+                <h3>Running Shoes Trainers Lightweight</h3>
+                <div class="price"> $39.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate" role="group" aria-label="2 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="1">
+                <img src="image/man/p12/71Gmfwrnv5L._AC_UY695_.jpg" alt="">
+                <h3>Shoes Men's Running Shoes</h3>
+                <div class="price"> $25.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div><div class="swiper-slide box swiper-slide-duplicate swiper-slide-duplicate-prev" role="group" aria-label="3 / 8" style="width: 269.333px; margin-right: 20px;" data-swiper-slide-index="2">
+                <img src="image/man/p13/71oOLhrozhS._AC_UY695_.jpg" alt="">
+                <h3>Trainers Men's Shoes</h3>
+                <div class="price"> $52.99</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div></div>
 
 
-</section>
-
-<!-- products section ends -->
+<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div></section>
 
 
 <section class="review" id="review">
@@ -402,7 +538,7 @@
             <div class="swiper-slide box">
                 <img src="image/pic-1.png" alt="">
                 <p>I've tried on so many different shoes in my life and I can't count how many times I've been disappointed by the fit. I finally got a pair of air jordan that I love, however, with their patented air-siping technology. The shoes are incredibly comfortable and they look great.</p>
-                <h3>john deo</h3>
+                <h3>Benjamin Lewis</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -418,7 +554,7 @@
                     I believe the air Jordan is the best basketball shoe due to the following reasons:  
                     1. The upper is very flexible. I've never had any problems with my ankles and have yet to feel any soreness afterwards.  
                     2. The interior is very breathable. I never feel like I'm suffocating in my shoes</p>
-                <h3>john deo</h3>
+                <h3>Olivia Brown</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -445,6 +581,49 @@
             <div class="swiper-slide box">
                 <img src="image/pic-4.png" alt="">
                 <p>I am a professional photographer and have been using air force 1 for years, and I'm excited to see the new changes to this camera. It has the same great features as before, such as the ability to record at 1080p and the ability to view the footage remotely. The biggest change is the new look. I used to love the old look of the air force 1, but now it's a bit too bland for my taste. I was also disappointed they didn't make a black</p>
+                <h3>Elijah Davis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>I've tried on so many different shoes in my life and I can't count how many times I've been disappointed by the fit. I finally got a pair of air jordan that I love, however, with their patented air-siping technology. The shoes are incredibly comfortable and they look great.</p>
+                <h3>Benjamin Lewis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>The air Jordan is the most comfortable basketball shoe I've ever worn. I got the white/blue/black and love them.  
+                    I believe the air Jordan is the best basketball shoe due to the following reasons:  
+                    1. The upper is very flexible. I've never had any problems with my ankles and have yet to feel any soreness afterwards.  
+                    2. The interior is very breathable. I never feel like I'm suffocating in my shoes</p>
+                <h3>Olivia Brown</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>I have used this product for the past 6 months and I can say that the product is really good. It can be used on the phone or laptop and it is easy to use.  
+                    I would recommend this product to anyone who needs a good quality product with a good price.</p>
                 <h3>john deo</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -455,6 +634,186 @@
                 </div>
             </div>
 
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>I am a professional photographer and have been using air force 1 for years, and I'm excited to see the new changes to this camera. It has the same great features as before, such as the ability to record at 1080p and the ability to view the footage remotely. The biggest change is the new look. I used to love the old look of the air force 1, but now it's a bit too bland for my taste. I was also disappointed they didn't make a black</p>
+                <h3>Elijah Davis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>I've tried on so many different shoes in my life and I can't count how many times I've been disappointed by the fit. I finally got a pair of air jordan that I love, however, with their patented air-siping technology. The shoes are incredibly comfortable and they look great.</p>
+                <h3>Benjamin Lewis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>The air Jordan is the most comfortable basketball shoe I've ever worn. I got the white/blue/black and love them.  
+                    I believe the air Jordan is the best basketball shoe due to the following reasons:  
+                    1. The upper is very flexible. I've never had any problems with my ankles and have yet to feel any soreness afterwards.  
+                    2. The interior is very breathable. I never feel like I'm suffocating in my shoes</p>
+                <h3>Olivia Brown</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>I have used this product for the past 6 months and I can say that the product is really good. It can be used on the phone or laptop and it is easy to use.  
+                    I would recommend this product to anyone who needs a good quality product with a good price.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>I am a professional photographer and have been using air force 1 for years, and I'm excited to see the new changes to this camera. It has the same great features as before, such as the ability to record at 1080p and the ability to view the footage remotely. The biggest change is the new look. I used to love the old look of the air force 1, but now it's a bit too bland for my taste. I was also disappointed they didn't make a black</p>
+                <h3>Elijah Davis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>I've tried on so many different shoes in my life and I can't count how many times I've been disappointed by the fit. I finally got a pair of air jordan that I love, however, with their patented air-siping technology. The shoes are incredibly comfortable and they look great.</p>
+                <h3>Benjamin Lewis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>The air Jordan is the most comfortable basketball shoe I've ever worn. I got the white/blue/black and love them.  
+                    I believe the air Jordan is the best basketball shoe due to the following reasons:  
+                    1. The upper is very flexible. I've never had any problems with my ankles and have yet to feel any soreness afterwards.  
+                    2. The interior is very breathable. I never feel like I'm suffocating in my shoes</p>
+                <h3>Olivia Brown</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>I have used this product for the past 6 months and I can say that the product is really good. It can be used on the phone or laptop and it is easy to use.  
+                    I would recommend this product to anyone who needs a good quality product with a good price.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>I am a professional photographer and have been using air force 1 for years, and I'm excited to see the new changes to this camera. It has the same great features as before, such as the ability to record at 1080p and the ability to view the footage remotely. The biggest change is the new look. I used to love the old look of the air force 1, but now it's a bit too bland for my taste. I was also disappointed they didn't make a black</p>
+                <h3>Elijah Davis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>I've tried on so many different shoes in my life and I can't count how many times I've been disappointed by the fit. I finally got a pair of air jordan that I love, however, with their patented air-siping technology. The shoes are incredibly comfortable and they look great.</p>
+                <h3>Benjamin Lewis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>The air Jordan is the most comfortable basketball shoe I've ever worn. I got the white/blue/black and love them.  
+                    I believe the air Jordan is the best basketball shoe due to the following reasons:  
+                    1. The upper is very flexible. I've never had any problems with my ankles and have yet to feel any soreness afterwards.  
+                    2. The interior is very breathable. I never feel like I'm suffocating in my shoes</p>
+                <h3>Olivia Brown</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>I have used this product for the past 6 months and I can say that the product is really good. It can be used on the phone or laptop and it is easy to use.  
+                    I would recommend this product to anyone who needs a good quality product with a good price.</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>I am a professional photographer and have been using air force 1 for years, and I'm excited to see the new changes to this camera. It has the same great features as before, such as the ability to record at 1080p and the ability to view the footage remotely. The biggest change is the new look. I used to love the old look of the air force 1, but now it's a bit too bland for my taste. I was also disappointed they didn't make a black</p>
+                <h3>Elijah Davis</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -476,29 +835,21 @@
             <p>Fresh and new products for you.
                 We Have The Latest Sneakers And The Cheapest On The Market.</p>
             <div class="share">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100086362280177" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/kingz_shoe" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/shoekingzro/" class="fab fa-instagram"></a>
             </div>
         </div>
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +40 725 652 951</a>
-            <a href="#" class="links"> <i class="fas fa-phone"></i> +40 725 652 951</a>
-            <a href="#" class="links"> <i class="fas fa-envelope"></i> opreacasian@gmail.com </a>
-            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> cluj-napoca , romania - 400699 </a>
+            <a  class="links"> <i class="fas fa-phone"></i> +40 725 652 951</a>
+            <a  class="links"> <i class="fas fa-phone"></i> +40 725 652 951</a>
+            <a  class="links"> <i class="fas fa-envelope"></i> opreacasian@gmail.com </a>
+            <a  class="links"> <i class="fas fa-map-marker-alt"></i> cluj-napoca , romania - 400699 </a>
         </div>
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
-            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
-        </div>
+        
 
         <div class="box">
             <h3>newsletter</h3>

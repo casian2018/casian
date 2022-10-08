@@ -82,3 +82,10 @@ var swiper = new Swiper(".review-slider", {
       },
     },
 });
+
+<script>
+function clickinner(){
+    var mybtn=document.getElementsByClassName('btn');
+    mybtn.onClick="location.href='about-us.html'";
+};
+</script>

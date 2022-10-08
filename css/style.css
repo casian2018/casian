@@ -228,7 +228,6 @@ section{
     text-align: center;
     margin:1rem;
 }
-
 .header .login-form{
     position: absolute;
     top:110%; right:-110%;
@@ -684,6 +683,10 @@ section{
 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 @media (max-width:450px){
 
     html{
