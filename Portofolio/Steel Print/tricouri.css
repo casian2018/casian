@@ -217,14 +217,15 @@ header{
 }
 .details h1 {
 	color: #333;
-	font-size: 35px;
 	width: 100%;
+	margin-top: 15px;
 }
 .details h2{
 color: #555;
 font-size: 30px;
 font-weight: 600;
 margin-bottom: 20px;
+margin-bottom: 30px;
 }
 .details form{
 	font-size: 15px;
